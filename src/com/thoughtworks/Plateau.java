@@ -7,10 +7,14 @@ public class Plateau {
 	
 	public Plateau(int x, int y) {
 		if (x < 0 || y < 0) {
-			throw new IllegalArgumentException("coordinates must not be negative");
+			throw new IllegalArgumentException("plateau size must not be negative");
 		}
-		numberOfColumns = x + 1;
-		numberOfLines = y + 1;
+		numberOfColumns = x;
+		numberOfLines = y;
+	}
+	
+	public boolean hasLocation(Location location) {
+		return location.getX() < numberOfColumns && location.getY() < numberOfLines;
 	}
 	
 	public int getNumberOfColumns() {
@@ -19,5 +23,9 @@ public class Plateau {
 	
 	public int getNumberOfLines() {
 		return numberOfLines;
+	}
+	
+	public static Plateau fromUpperRightCoordinate(Location location) {
+		return new Plateau(location.getX() + 1, location.getY() + 1);
 	}
 }
