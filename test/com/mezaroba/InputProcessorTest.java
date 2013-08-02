@@ -1,7 +1,14 @@
-package com.thoughtworks;
+package com.mezaroba;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+
+import com.mezaroba.InputProcessor;
+import com.mezaroba.Location;
+import com.mezaroba.NavigationInstruction;
+import com.mezaroba.Orientation;
+import com.mezaroba.Plateau;
+import com.mezaroba.RoverInfo;
 
 public class InputProcessorTest {
 

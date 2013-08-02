@@ -1,4 +1,4 @@
-package com.thoughtworks;
+package com.mezaroba;
 
 public class Rover {
 

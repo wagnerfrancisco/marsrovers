@@ -1,7 +1,9 @@
-package com.thoughtworks;
+package com.mezaroba;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+
+import com.mezaroba.Orientation;
 
 public class OrientationTest {
 

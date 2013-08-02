@@ -1,7 +1,10 @@
-package com.thoughtworks;
+package com.mezaroba;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+
+import com.mezaroba.Location;
+import com.mezaroba.Plateau;
 
 public class PlateauTest {
 
